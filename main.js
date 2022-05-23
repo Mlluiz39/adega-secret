@@ -5,6 +5,7 @@ const closeMenu = document.querySelector('[data-js="close-navigation"]')
 const home = document.querySelector('[data-js="home"]')
 const services = document.querySelector('[data-js="services"]')
 const about = document.querySelector('[data-js="about"]')
+const contact = document.querySelector('[data-js="contact"]')
 
 document.addEventListener('scroll', () => {
   scrollY > 0
@@ -16,7 +17,9 @@ openMenu.addEventListener('click', () => {
   body.classList.add('menu-expanded')
 })
 
-const clickToCloseMenu = (...args) => {
+const clickToCloseMenuItems = { closeMenu, home, services, about, contact }
+
+const clickToCloseMenu = (args) => {
   closeMenu.addEventListener('click', () => {
     body.classList.remove('menu-expanded')
   })
@@ -29,9 +32,12 @@ const clickToCloseMenu = (...args) => {
   about.addEventListener('click', () => {
     body.classList.remove('menu-expanded')
   })
+  contact.addEventListener('click', () => {
+    body.classList.remove('menu-expanded')
+  })
 }
 
-clickToCloseMenu(closeMenu, home, services, about)
+clickToCloseMenu(clickToCloseMenuItems)
 
 ScrollReveal({
   origin: 'top',
