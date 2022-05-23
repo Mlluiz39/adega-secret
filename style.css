@@ -238,6 +238,10 @@ body.menu-expanded button path {
   padding-top: calc(4.1rem + var(--nav-height));
 }
 
+#home .button {
+  margin-inline: auto;
+}
+
 #home::before {
   content: '';
   width: 100%;
