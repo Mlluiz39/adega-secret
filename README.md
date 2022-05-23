@@ -1,1 +1,1 @@
-# adega-secret
+# secret-cellar

@@ -251,6 +251,40 @@ body.menu-expanded button path {
   z-index: -1;
 }
 
+.menu .button-menu {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--white-color);
+  color: var(--color-purple);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-bottom: 6rem;
+  margin-top: 4.8rem;
+  border: none;
+  border-radius: 4rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.menu .button-menu:hover {
+  opacity: 0.8;
+}
+
+.menu .button-menu:active {
+  opacity: 0.5;
+}
+
 .hero-section p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -260,35 +294,33 @@ body.menu-expanded button path {
   margin-bottom: 3.2rem;
 }
 
-.hero-section button {
+.button {
   background-color: var(--color-purple);
   color: var(--white-color);
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.8rem;
   text-transform: uppercase;
+  text-decoration: none;
 
   margin-bottom: 6rem;
   border: none;
   border-radius: 4rem;
 
-  height: 6.2rem;
-  width: 26.3rem;
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.hero-section button:hover {
+.button:hover {
   opacity: 0.8;
 }
 
-.hero-section button:active {
+.button:active {
   opacity: 0.5;
 }
 
@@ -380,4 +412,65 @@ body.menu-expanded button path {
   border-radius: 1.5rem;
 
   margin-bottom: 6rem;
+}
+
+#contact {
+  text-align: left;
+}
+
+#contact header h2 {
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  margin-top: 10rem;
+  text-align: left;
+}
+
+#contact header p {
+  margin-bottom: 3.2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+
+footer {
+  background-color: var(--color-purple);
+  padding-block: 6rem;
+  color: var(--white-color);
+  text-align: left;
+
+  margin-top: 10rem;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+
+  margin-left: -2.1rem;
+}
+
+footer .logo svg {
+  width: 23.6rem;
+  height: 3.1rem;
+  justify-content: start;
+}
+
+footer .logo path {
+  fill: #fff;
+}
+
+footer p {
+  line-height: 2;
+
+  margin-bottom: 3.2rem;
+}
+
+footer .social-links {
+  justify-content: start;
 }
